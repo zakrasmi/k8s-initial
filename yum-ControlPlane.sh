@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo -e "+++"
 echo "Install packages"
 echo -e "+++"
@@ -34,3 +36,8 @@ echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permane
 alias k=kubectl
 complete -o default -F __start_kubectl k
 
+echo -e "+++"
+echo "All set"
+echo -e "+++"
+
+Exit 0
