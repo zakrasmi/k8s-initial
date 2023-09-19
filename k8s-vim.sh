@@ -22,10 +22,17 @@ mkdir -p ~/.vim/pack/git-plugins/start
 git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-plugins/start/ale
 pip3 install --user yamllint
 
-
+echo
+echo -e "+++"
+echo "Install pip3-shyaml"
+echo -e "+++"
 pip3 install --user shyaml
 
 
+echo
+echo -e "+++"
+echo "Install yq"
+echo -e "+++"
 sudo add-apt-repository ppa:rmescandon/yq
 sudo apt-get install yq
 
