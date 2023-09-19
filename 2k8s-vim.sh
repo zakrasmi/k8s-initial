@@ -58,12 +58,12 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 let g:indentLine_color_term = 239
 "let g:indentLine_char = '⦙'
-let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+"let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
-let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
-let g:ale_sign_error = '✘'
-let g:ale_sign_warning = '⚠'
-let g:ale_lint_on_text_changed = 'never'
+"let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+"let g:ale_sign_error = '✘'
+"let g:ale_sign_warning = '⚠'
+"let g:ale_lint_on_text_changed = 'never'
 
 """ folding can help troubleshoot indentation syntax
 set foldenable
