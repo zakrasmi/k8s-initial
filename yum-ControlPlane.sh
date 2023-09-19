@@ -47,4 +47,5 @@ echo -e "+++"
 echo "All set"
 echo -e "+++"
 
-Exit 0
+exit 0
+exit
