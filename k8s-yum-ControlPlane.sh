@@ -4,7 +4,7 @@ echo
 echo -e "+++"
 echo "Install packages"
 echo -e "+++"
-yum install vim sudo screen tmux -y
+yum install vim sudo screen tmux wget curl -y
 
 echo
 echo -e "+++"
