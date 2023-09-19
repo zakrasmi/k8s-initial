@@ -1,14 +1,17 @@
 echo -e "+++"
 echo "Install packages"
+echo -e "+++"
 yum install vim sudo screen tmux -y
 
 echo -e "+++"
 echo "Add sudo user"
+echo -e "+++"
 adduser zak
 usermod -aG wheel zak
 
 echo -e "+++"
 echo "Prepare teh control-plane" 
+echo -e "+++"
 kubeadm init \
 --kubernetes-version="1.27.2" \
 --pod-network-cidr=10.33.0.0/16 \
@@ -20,10 +23,12 @@ kubeadm init \
 
 echo -e "+++"
 echo "Prepare networking"
+echo -e "+++"
 kubectl apply -f https://raw.githubusercontent.com/cloudnativelabs/kube-router/master/daemonset/kubeadm-kuberouter.yaml
 
 echo -e "+++"
 echo "Prepare auto complete and aliases"
+echo -e "+++"
 source <(kubectl completion bash) # set up autocomplete in bash into the current shell, bash-completion package should be installed first.
 echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permanently to your bash shell.
 alias k=kubectl
