@@ -1,3 +1,8 @@
+
+
+
+################## NOt COMPLETED
+
 #!/bin/bash
 
 echo
@@ -51,8 +56,10 @@ set ruler
 "autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab autoindent
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
+let g:indentLine_color_term = 239
+"let g:indentLine_char = '⦙'
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
-let g:indentLine_char = '⦙'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_sign_error = '✘'
 let g:ale_sign_warning = '⚠'
