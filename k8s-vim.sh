@@ -36,3 +36,10 @@ echo -e "+++"
 sudo add-apt-repository ppa:rmescandon/yq
 sudo apt-get install yq
 
+echo
+echo -e "+++"
+echo "All set"
+echo -e "+++"
+
+exit 0
+exit
