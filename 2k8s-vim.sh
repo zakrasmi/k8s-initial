@@ -33,8 +33,11 @@ echo
 echo -e "+++"
 echo "Install yq"
 echo -e "+++"
-sudo add-apt-repository ppa:rmescandon/yq
-sudo apt-get install yq
+# sudo add-apt-repository ppa:rmescandon/yq
+# sudo apt-get install yq
+BINARY=yq_linux_amd64 
+LATEST=$(wget -qO- https://api.github.com/repos/mikefarah/yq/releases/latest 2>/dev/null | grep browser_download_url | grep $BINARY\"\$|awk '{print $NF}' )
+sudo wget -q $LATEST -O /usr/bin/yq && sudo chmod +x /usr/bin/yq
 
 echo
 echo -e "+++"
