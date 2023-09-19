@@ -49,7 +49,7 @@ set ruler
 """ basic settings for yaml and python files
 "autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab number autoindent
 "autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab autoindent
-au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent
+"au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 let g:indentLine_color_term = 239
