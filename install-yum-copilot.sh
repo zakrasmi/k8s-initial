@@ -5,12 +5,12 @@ usermod -aG wheel zak
 
 kubeadm init \
 --kubernetes-version="1.27.2" \
---control-plane-endpoint="node:6443" \
 --pod-network-cidr=10.33.0.0/16 \
 --upload-certs \
 --apiserver-advertise-address $(hostname -i) \
 --service-cidr="10.3.0.0/16" \
 | tee kubeadm-init-test.log_$(date +"%Y-%m-%d-%H-%M-%S") # Save output for future review 
+#--control-plane-endpoint="node:6443" \
 
 kubectl apply -f https://raw.githubusercontent.com/cloudnativelabs/kube-router/master/daemonset/kubeadm-kuberouter.yaml
 
