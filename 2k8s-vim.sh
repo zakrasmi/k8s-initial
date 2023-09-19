@@ -4,7 +4,7 @@ echo
 echo -e "+++"
 echo "Install python3-pip"
 echo -e "+++"
-yum install python3-pip
+yum install python3-pip -y
 
 echo
 echo -e "+++"
@@ -61,10 +61,10 @@ let g:indentLine_color_term = 239
 "let g:ale_lint_on_text_changed = 'never'
 
 """ folding can help troubleshoot indentation syntax
-set foldenable
-set foldlevelstart=20
-set foldmethod=indent
-nnoremap <space> za
+"set foldenable
+"set foldlevelstart=20
+"set foldmethod=indent
+"nnoremap <space> za
 EOT
 
 echo
