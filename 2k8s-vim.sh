@@ -1,8 +1,3 @@
-
-
-
-################## NOt COMPLETED
-
 #!/bin/bash
 
 echo
