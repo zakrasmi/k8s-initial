@@ -1,4 +1,4 @@
-echo -e "+++
+echo -e "+++"
 echo "Install packages"
 yum install vim sudo screen tmux -y
 
