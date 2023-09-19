@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo
+echo -e "+++"
+echo "Install python3-pip"
+echo -e "+++"
 yum install python3-pip
 
 mkdir $HOME/.vim
@@ -11,7 +15,7 @@ git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-pl
 pip3 install --user yamllint
 
 
-pip3 install shyaml
+pip3 install --user shyaml
 
 
 sudo add-apt-repository ppa:rmescandon/yq
